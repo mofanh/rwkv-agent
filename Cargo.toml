@@ -1,0 +1,19 @@
+[package]
+name = "rwkv-agent"
+version = "0.1.0"
+edition = "2021"
+authors = ["LBJ"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+web-rwkv = "0.6"
+anyhow = "1.0"
+half = { version = "2.2", features = ["bytemuck", "serde"] }
+instant = { version = "0.1", features = ["inaccurate", "wasm-bindgen"] }
+safetensors = "0.4"
+clap = { version = "4.3", features = ["derive"] }
+memmap2 = "0.9"
+tokio = { version = "1", features = ["full"] }
+wgpu = "0.18"
+
